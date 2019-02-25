@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_21_132428) do
+ActiveRecord::Schema.define(version: 2019_02_25_112025) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2019_02_21_132428) do
     t.string "last_sign_in_ip"
     t.string "name"
     t.integer "gender"
-    t.integer "age"
+    t.string "birth_year"
     t.integer "read_count", default: 0
     t.integer "reference_count", default: 0
     t.datetime "created_at", null: false
