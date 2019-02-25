@@ -9,6 +9,6 @@ class User < ApplicationRecord
          validates :birth_year, presence: true
          validates :birth_year, length: { is: 4 }, allow_blank: true
          
-         before_save {self.birth_year = birth_year.tr!("０-９", "0-9")}
+         before_create {self.birth_year = birth_year.tr!("０-９", "0-9")}
 
 end
